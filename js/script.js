@@ -126,7 +126,7 @@ function printQuote() {
   html += `</p>`
 
   // set quote-box innerHTML to generated `html` string
-  document.getElementById('quote-box').innerHTML = html; 
+  document.getElementById('quote-box').innerHTML = html
 
   // update the background color using `getRandomColor` function
   document.body.style.backgroundColor = getRandomColor()
