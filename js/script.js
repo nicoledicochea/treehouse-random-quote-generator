@@ -43,6 +43,15 @@ const quotes = [
 
 
 /***
+ * `getRandomColor` function
+ * 
+ * When a new quote prints to the page, the background color changes to a random color.
+
+Create a function that updates the background color to a random color.
+***/
+
+
+/***
  * `getRandomQuote` function
 ***/
 
@@ -81,6 +90,12 @@ function printQuote() {
   // console.log(html)
 
   document.getElementById('quote-box').innerHTML = html; 
+
+
+  // Auto-refreshed quotes
+  // The quote on the page automatically updates at regular intervals.
+
+  // Create a timing function with the setInterval() method to print a new quote to the page at regular intervals, like every 10 to 20 seconds.
 
 }
 
