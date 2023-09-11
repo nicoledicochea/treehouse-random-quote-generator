@@ -62,7 +62,7 @@ const quotes = [
 
 /***
  * `getRandomColor` function
- * returns rgb() color value
+ * return rgb() color value
 ***/
 
 function getRandomColor() {
@@ -76,6 +76,7 @@ function getRandomColor() {
 
 /***
  * `getRandomQuote` function
+ * return a random quote object from the quotes array
 ***/
 
 function getRandomQuote( quotes ) {
@@ -83,46 +84,51 @@ function getRandomQuote( quotes ) {
   return quotes[randomNum]
 }
 
-
-
 /***
  * `printQuote` function
+ * print a random quote to the page
 ***/
 
 function printQuote() {
 
+
+  // generate random quote
   const randomQuote = getRandomQuote( quotes )
 
+  // initialize html as an empty string
   let html = ''
+
+  // add quote and source properties to html using template literal
   html += `
     <p class="quote">${randomQuote.quote}</p>
     <p class="source">${randomQuote.source}
   `
+  // conditionally add citation property 
   if( randomQuote.citation) {
     html += `<span class="citation">${randomQuote.citation}</span>`
   } 
+
+  // conditionally add year property
   if ( randomQuote.year ) {
     html += `<span class="year">${randomQuote.year}</span>`
   }
+
+  // conditionally add tags property
   if ( randomQuote.tags ) {
     html += `<span class="tags">, ${randomQuote.tags}</span>`
   }
 
   html += `</p>`
 
+  // set quote-box innerHTML to generated `html` string
   document.getElementById('quote-box').innerHTML = html; 
 
-  // update the background color using getRandomColor function
-
+  // update the background color using `getRandomColor` function
   document.body.style.backgroundColor = getRandomColor()
 
 }
 
-// Auto-refreshed quotes
-// The quote on the page automatically updates at regular intervals.
-
-// Create a timing function with the setInterval() method to print a new quote to the page at regular intervals, like every 10 to 20 seconds.
-
+// run printQuote function every 10 seconds
 setInterval(printQuote, 10000)
 
 /***
