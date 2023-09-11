@@ -55,7 +55,7 @@ function getRandomColor() {
   const green = Math.floor((Math.random() * 255))
   const blue = Math.floor((Math.random() * 255))
 
-  return `rgb(${red} ${green} ${blue} / 0.8)`
+  return `rgb(${red} ${green} ${blue})`
 }
 
 
