@@ -55,7 +55,7 @@ function getRandomColor() {
   const green = Math.floor((Math.random() * 255))
   const blue = Math.floor((Math.random() * 255))
 
-  return `rgb(${red} ${green} ${blue})`
+  return `rgb(${red} ${green} ${blue} / 0.8)`
 }
 
 
@@ -105,10 +105,16 @@ function printQuote() {
 
 }
 
+// Auto-refreshed quotes
+// The quote on the page automatically updates at regular intervals.
+
+// Create a timing function with the setInterval() method to print a new quote to the page at regular intervals, like every 10 to 20 seconds.
+
+setInterval(printQuote, 10000)
 
 /***
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
 
-document.getElementById('load-quote').addEventListener("click", printQuote, false);
+document.getElementById('load-quote').addEventListener("click", printQuote, false)
