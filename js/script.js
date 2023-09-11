@@ -82,7 +82,6 @@ function getRandomQuote( quotes ) {
   const randomNum = Math.floor(Math.random() * (quotes.length))
   return quotes[randomNum]
 }
-// console.log( getRandomQuote ( quotes ) )
 
 
 
@@ -91,8 +90,9 @@ function getRandomQuote( quotes ) {
 ***/
 
 function printQuote() {
+
   const randomQuote = getRandomQuote( quotes )
-  // console.log(randomQuote)
+
   let html = ''
   html += `
     <p class="quote">${randomQuote.quote}</p>
@@ -109,8 +109,6 @@ function printQuote() {
   }
 
   html += `</p>`
-
-  // console.log(html)
 
   document.getElementById('quote-box').innerHTML = html; 
 
