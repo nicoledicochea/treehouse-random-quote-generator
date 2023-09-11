@@ -1,7 +1,7 @@
 # Random Quote Generator
 This quote generator prints a new random quote to the page every 10 seconds or when a user clicks the 'show another quote' button.
 
-<!-- **Link to project:** http://recruiters-love-seeing-live-demos.com/
+<!-- **Link to project:** here
 
 ![alt tag](here) -->
 

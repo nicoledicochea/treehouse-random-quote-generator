@@ -5,6 +5,14 @@ project 1 - A Random Quote Generator
 
 /*** 
   * declare `quotes` array
+  * @constant
+  * @type
+    * {Object}: quotes
+    * {string}: quote
+    * {string}: source
+    * {string}: citation
+    * {number}: year
+    * {string}: tags
 ***/
 
 const quotes = [
@@ -77,6 +85,8 @@ function getRandomColor() {
 /***
  * `getRandomQuote` function
  * return a random quote object from the quotes array
+ * @param {Object[].<string, number>} quotes - array of quote objects
+ * @returns {Object.<string, number>} - one random quote
 ***/
 
 function getRandomQuote( quotes ) {
@@ -128,12 +138,14 @@ function printQuote() {
 
 }
 
-// run printQuote function every 10 seconds
+/***
+ *run printQuote function every 10 seconds
+ * @callback printQuote
+***/
 setInterval(printQuote, 10000)
 
 /***
- * click event listener for the print quote button
- * DO NOT CHANGE THE CODE BELOW!!
+ * click event listener to run printQuote function
 ***/
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false)
