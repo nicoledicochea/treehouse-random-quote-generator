@@ -13,30 +13,52 @@ project 1 - A Random Quote Generator
 
 const quotes = [
   {
-    quote: '1',
-    source: 'a',
-    citation: 'book',
+    quote: "Don’t let anyone ever make you feel like you don’t deserve what you want.",
+    source: 'Heath Ledger as Patrick Verona',
+    citation: '10 Things I Hate About You',
     year: 1999,
-    tags: 'humor'
+    tags: 'film'
   },
   {
-    quote: '2',
-    source: 'b',
-    tags: 'humor'
+    quote: "No matter what anybody tells you, words and ideas can change the world.",
+    source: 'Robin Williams as John Keating',
+    citation: 'Dead Poets Society',
+    year: 1989,
+    tags: 'film'
   },
   {
-    quote: '3',
-    source: 'c',
-    tags: 'poetry'
+    quote: "Life moves pretty fast. If you don’t stop and look around once in a while, you could miss it.",
+    source: 'Matthew Broderick as Ferris Bueller',
+    citation: 'Ferris Bueller’s Day Off',
+    year: 1986,
+    tags: 'film'
   },
   {
-    quote: '4',
-    source: 'd',
-    tags: 'science'
+    quote: "It is better to be hated for what you are than to be loved for what you are not.",
+    source: 'André Gide',
+    citation: 'Autumn Leaves',
+    year: 1950,
+    tags: 'literature'
   },
   {
-    quote: '5',
-    source: 'e',
+    quote: "And, now that you don’t have to be perfect you can be good.",
+    source: 'John Steinbeck',
+    citation: 'East of Eden',
+    year: 1952,
+    tags: 'literature'
+  },
+  {
+    quote: "She decided long ago that life was a long journey. She would be strong, and she would be weak, and both would be okay.",
+    source: 'Tahereh Mafi',
+    citation: 'Furthermore',
+    year: 2016,
+    tags: 'literature'
+  },
+  {
+    quote: "I know very little about anything, but what I do know is that if you can live your life without an audience, you should do it.",
+    source: 'Bo Burnham',
+    citation: 'Make Happy',
+    year: 2016,
     tags: 'film'
   }
 ]
