@@ -3,7 +3,7 @@ This quote generator prints a new random quote to the page every 10 seconds or w
 
 <!-- **Link to project:** http://recruiters-love-seeing-live-demos.com/
 
-![alt tag](http://placecorgi.com/1200/650) -->
+![alt tag](here) -->
 
 ## How It's Made:
 
